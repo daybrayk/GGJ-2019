@@ -5,6 +5,7 @@ using UnityEngine;
 public class AvatarFunctionality : MonoBehaviour {
     [SerializeField]
     protected float m_moveSpeed;
+    [SerializeField]
     protected float m_angularSpeed;
     protected Rigidbody m_rb;
     protected Vector3 m_strafeVelocity;
