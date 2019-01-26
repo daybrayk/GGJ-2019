@@ -71,7 +71,7 @@ public class EnemyAIMovement : AvatarFunctionality {
         else
         {
             float distanceBetweenTarget = Vector3.Distance(target.position, transform.position);
-            Debug.Log(distanceBetweenTarget);
+            //Debug.Log(distanceBetweenTarget);
             if (distanceBetweenTarget < 2)
             {
                 target = NewPatrolLocation();
@@ -83,7 +83,7 @@ public class EnemyAIMovement : AvatarFunctionality {
     {
         Transform newDestination;
 
-        if(patrolNumber >= patrolLocations.Count)
+        if(patrolNumber >= patrolLocations.Count - 1)
         {
             patrolNumber = 0;
         }
@@ -97,5 +97,15 @@ public class EnemyAIMovement : AvatarFunctionality {
         nma.SetDestination(newDestination.position);
 
         return newDestination;
+    }
+
+    private void OnCollisionEnter(Collision c)
+    {
+        if(c.transform.tag == "Player")
+        {
+            //c.transform.GetComponent<PlayerController>().DoSomething();
+            Debug.Log("RAPE");
+
+        }
     }
 }
