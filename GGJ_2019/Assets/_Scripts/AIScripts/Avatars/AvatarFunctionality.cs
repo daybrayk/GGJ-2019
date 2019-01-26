@@ -14,13 +14,13 @@ public class AvatarFunctionality : MonoBehaviour {
 	protected void Start () {
         m_rb = GetComponent<Rigidbody>();
 	}
-	
-	// Update is called once per frame
-	protected void Update () {
+
+    protected void FixedUpdate()
+    {
         Vector3 upVelocity = Vector3.up * m_rb.velocity.y;
         m_rb.velocity = upVelocity + m_linearVelocity + m_strafeVelocity;
         m_rb.angularVelocity = m_angularVelocity;
-	}
+    }
 
     public void SetLinearRatio(float ratio)
     {
