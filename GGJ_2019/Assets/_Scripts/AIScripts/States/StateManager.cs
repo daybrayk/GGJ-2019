@@ -64,7 +64,7 @@ public class StateManager {
                 {
                     m_currentState.OnExit();
                 }
-                Debug.Log("Changing state to " + toState);
+                //Debug.Log("Changing state to " + toState);
                 m_currentState = s;
                 m_currentState.OnEnter();
                 break;

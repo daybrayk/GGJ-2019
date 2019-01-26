@@ -35,7 +35,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Ground
   - NonPlayerCharacter
   m_SortingLayers:
   - name: Default

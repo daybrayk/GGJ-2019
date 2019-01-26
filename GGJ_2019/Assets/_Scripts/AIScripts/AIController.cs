@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AIController : Controller {
     public Transform followTransform;
+    public float snapDistance;
     public bool doingMechanic;
     [SerializeField]
     private float m_distanceThreshold;
@@ -11,6 +12,9 @@ public class AIController : Controller {
     [SerializeField]
     private Collider m_mechanicCollider;
     private NPCAvatar m_avatar;
+    [SerializeField]
+    private LayerMask m_groundMask;
+    private float m_groundedLength;
 	// Use this for initialization
 	void Start () {
         m_avatar = GetComponent<NPCAvatar>();
@@ -23,6 +27,7 @@ public class AIController : Controller {
 	
 	// Update is called once per frame
 	void Update () {
+        RaycastHit hit;
         m_stateManager.Update();
         if(!doingMechanic)
         {
@@ -37,6 +42,17 @@ public class AIController : Controller {
                 m_stateManager.desiredState = StateIDs.States.Mechanic;
             }
         }
+        //this code is to make the ai stay grounded when going up and down ramp, still work to be done.
+        /*if(Physics.Raycast(transform.position, Vector3.down, out hit, snapDistance, m_groundMask))
+        {
+            if ((transform.position.y - hit.point.y) > 1.0f)
+            {
+                Debug.Log("Should be falling " + (transform.position.y - hit.point.y));
+                avatar.SetVerticalRatio(1);
+            }
+            else
+                avatar.SetVerticalRatio(0);
+        }*/
 	}
 
     public void MoveToPosition(Vector3 position, float distanceThreshold = 1.0f)
