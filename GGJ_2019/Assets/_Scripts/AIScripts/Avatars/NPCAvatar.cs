@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class NPCAvatar : AvatarFunctionality {
-
+    public Transform followTransform;
 	// Use this for initialization
 	new protected void Start ()
     {

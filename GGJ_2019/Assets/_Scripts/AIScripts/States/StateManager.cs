@@ -5,7 +5,7 @@ using UnityEngine;
 public class StateManager {
 
     private List<BaseState> m_state = new List<BaseState>();
-    private BaseState m_currentState;
+    private BaseState m_currentState = null;
 
     public StateManager(AIController aiController)
     {
@@ -26,7 +26,7 @@ public class StateManager {
             ChangeState(desiredState);
             desiredState = StateIDs.States.Invalid;
         }
-
+        //Debug.Log(m_currentState);
         if(m_currentState != null)
         {
             m_currentState.OnUpdate();
@@ -38,10 +38,13 @@ public class StateManager {
         switch (state)
         {
             case StateIDs.States.Idle:
+                m_state.Add(new IdleState(this.aiController));
                 break;
             case StateIDs.States.Follow:
+                m_state.Add(new FollowState(aiController));
                 break;
             case StateIDs.States.Mechanic:
+                m_state.Add(new MechanicState(aiController));
                 break;
         }
     }

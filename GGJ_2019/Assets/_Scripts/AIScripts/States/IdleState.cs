@@ -7,7 +7,7 @@ public class IdleState : BaseState
 
     public IdleState(AIController aiController) : base(aiController)
     {
-        Debug.Log("Creating IdleState");
+        Debug.Log("Creating IdleState for " + aiController.gameObject.name);
         stateID = StateIDs.States.Idle;
     }
     public override void Init()
@@ -19,6 +19,8 @@ public class IdleState : BaseState
     {
         //play animation
         //stop movement
+        aiController.StopMovement();
+        aiController.StopRotation();
         aiController.gameObject.GetComponent<Renderer>().material.color = Color.green;
     }
 

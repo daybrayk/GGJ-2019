@@ -2,15 +2,36 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MechanicState : MonoBehaviour {
+public class MechanicState : BaseState
+{
+    public MechanicState(AIController aiController) : base(aiController)
+    {
+        Debug.Log("Creating Mechanic State for " + aiController.gameObject.name);
+        stateID = StateIDs.States.Mechanic;
+    }
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public override void Init()
+    {
+        
+    }
+
+    public override void OnEnter()
+    {
+        
+    }
+
+    public override void OnExit()
+    {
+        
+    }
+
+    public override void OnUpdate()
+    {
+        
+    }
+
+    public override void Shutdown()
+    {
+        
+    }
 }

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : Controller {
-
+    private AvatarFunctionality m_avatar;
 	// Use this for initialization
-	new protected void Start () {
-        base.Start();
+	void Start () {
+        m_avatar = GetComponent<AvatarFunctionality>();
 	}
 	
 	// Update is called once per frame

@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class FollowState : BaseState {
     public Transform destination;
-    public FollowState(AIController npcController) : base(npcController)
+    public FollowState(AIController aiController) : base(aiController)
     {
-
+        Debug.Log("Creating Follow State for " + aiController.gameObject.name);
+        stateID = StateIDs.States.Follow;
+        destination = aiController.avatar.followTransform;
     }
 
     public override void Init()
@@ -26,7 +28,8 @@ public class FollowState : BaseState {
 
     public override void OnUpdate()
     {
-        
+        aiController.RotateToDirection(destination.position);
+        aiController.MoveToPosition(destination.position);
     }
 
     public override void Shutdown()
