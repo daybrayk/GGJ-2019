@@ -26,12 +26,12 @@ public class IdleState : BaseState
 
     public override void OnExit()
     {
-        
+        aiController.gameObject.GetComponent<Renderer>().material.color = Color.white;
     }
 
     public override void OnUpdate()
     {
-        
+
     }
 
     public override void Shutdown()

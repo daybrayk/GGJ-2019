@@ -8,7 +8,7 @@ public class FollowState : BaseState {
     {
         Debug.Log("Creating Follow State for " + aiController.gameObject.name);
         stateID = StateIDs.States.Follow;
-        destination = aiController.avatar.followTransform;
+        destination = aiController.followTransform;
     }
 
     public override void Init()

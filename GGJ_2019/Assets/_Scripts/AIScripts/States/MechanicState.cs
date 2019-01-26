@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MechanicState : BaseState
 {
+
     public MechanicState(AIController aiController) : base(aiController)
     {
         Debug.Log("Creating Mechanic State for " + aiController.gameObject.name);
@@ -17,7 +18,9 @@ public class MechanicState : BaseState
 
     public override void OnEnter()
     {
-        
+        aiController.doingMechanic = true;
+        aiController.StopMovement();
+        aiController.StopRotation();
     }
 
     public override void OnExit()
@@ -27,6 +30,7 @@ public class MechanicState : BaseState
 
     public override void OnUpdate()
     {
+        aiController.doingMechanic = aiController.avatar.DoMechanic(aiController.mechanicCollider);
         
     }
 

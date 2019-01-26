@@ -3,7 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AIController : Controller {
+    public Transform followTransform;
+    public bool doingMechanic;
+    [SerializeField]
+    private float m_distanceThreshold;
     private StateManager m_stateManager;
+    [SerializeField]
+    private Collider m_mechanicCollider;
     private NPCAvatar m_avatar;
 	// Use this for initialization
 	void Start () {
@@ -18,22 +24,24 @@ public class AIController : Controller {
 	// Update is called once per frame
 	void Update () {
         m_stateManager.Update();
-        if(Vector3.Distance(m_avatar.followTransform.position, transform.position) > 3.0f)
+        if(!doingMechanic)
         {
-            m_stateManager.desiredState = StateIDs.States.Follow;
+            if (Vector3.Distance(followTransform.position, transform.position) > m_distanceThreshold)
+            {
+                m_stateManager.desiredState = StateIDs.States.Follow;
+            }
+            else
+                m_stateManager.desiredState = StateIDs.States.Idle;
+            if(Input.GetKeyDown(KeyCode.T))
+            {
+                m_stateManager.desiredState = StateIDs.States.Mechanic;
+            }
         }
 	}
 
     public void MoveToPosition(Vector3 position, float distanceThreshold = 1.0f)
     {
-        if(Vector3.Distance(position, transform.position) < distanceThreshold)
-        {
-            m_stateManager.desiredState = StateIDs.States.Idle;
-            StopMovement();
-            return;
-        }
         Vector3 direction = (position - transform.position).normalized;
-        float angle = Vector3.Angle(transform.forward, direction);
         m_avatar.SetLinearRatio(1);
         m_avatar.SetStrafeRatio(0);
     }
@@ -66,13 +74,21 @@ public class AIController : Controller {
         m_avatar.SetAngularRatio(0);
     }
 
-    public void DoMechanic()
-    {
-
-    }
-
     public NPCAvatar avatar
     {
         get { return m_avatar; }
+    }
+
+    public Collider mechanicCollider
+    {
+        get { return m_mechanicCollider; }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        m_mechanicCollider = other;
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        m_mechanicCollider = null;
     }
 }

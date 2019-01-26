@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class NPCAvatar : AvatarFunctionality {
-    public Transform followTransform;
 	// Use this for initialization
 	new protected void Start ()
     {
@@ -16,13 +15,8 @@ public class NPCAvatar : AvatarFunctionality {
         base.FixedUpdate();
     }
 
-    public virtual void DoMechanic()
+    public virtual bool DoMechanic(Collider c)
     {
-
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        
+        return true;
     }
 }
