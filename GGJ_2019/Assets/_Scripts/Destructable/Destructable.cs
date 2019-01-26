@@ -12,7 +12,7 @@ public class Destructable : MonoBehaviour {
 
 		if(this.npcNumber == ObstacleType.NoNpc)
         {
-            Debug.LogWarning("No obstacle type selected for " + name);
+            Debug.LogWarning("No obstacle type selected for " + name,gameObject);
         }
 
         if (this.npcNumber == ObstacleType.Axe)

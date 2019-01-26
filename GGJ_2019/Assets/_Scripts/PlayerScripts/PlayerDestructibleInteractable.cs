@@ -49,7 +49,7 @@ public class PlayerDestructibleInteractable : MonoBehaviour {
 
     private void OnTriggerExit(Collider c)
     {
-        if (c.transform.tag == "Player")
+        if (c.transform.tag == "Destructible")
         {
             canInteract = false;
             destructible = null;

@@ -18,6 +18,7 @@ public class EnemyAIMovement : AvatarFunctionality {
     //public float speed;
 
     public List<Transform> patrolLocations = new List<Transform>();
+    private List<Transform> tempLocation = new List<Transform>();
     [SerializeField]
     private int patrolNumber;
 
@@ -108,4 +109,18 @@ public class EnemyAIMovement : AvatarFunctionality {
 
         }
     }
+
+    public static void Shuffle<T>(this IList<T> ts)
+    {
+        var count = ts.Count;
+        var last = count - 1;
+        for (var i = 0; i < last; ++i)
+        {
+            var r = UnityEngine.Random.Range(i, count);
+            var tmp = ts[i];
+            ts[i] = ts[r];
+            ts[r] = tmp;
+        }
+    }
+
 }
