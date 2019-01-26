@@ -4,4 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(AvatarFunctionality))]
 public class Controller : MonoBehaviour {
 	// Use this for initialization
+	void Start () {
+        
+	}
 }

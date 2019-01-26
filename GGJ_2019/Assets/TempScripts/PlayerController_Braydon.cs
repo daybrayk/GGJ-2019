@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : Controller {
+public class PlayerController_Braydon : Controller {
     private AvatarFunctionality m_avatar;
 	// Use this for initialization
 	void Start () {
