@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(EnemyAIMovement))]
+
 public class EnemyView : MonoBehaviour {
 
-
+    private EnemyAIMovement enemyAiMovement;
     public float viewRadius;
     [Range(0, 360)]
     public float viewAngle;
@@ -14,6 +16,11 @@ public class EnemyView : MonoBehaviour {
 
     [HideInInspector]
     public List<Transform> visibleTargets = new List<Transform>();
+
+    private void Start()
+    {
+        enemyAiMovement = this.GetComponent<EnemyAIMovement>();
+    }
 
     private void Update()
     {
@@ -32,13 +39,17 @@ public class EnemyView : MonoBehaviour {
                     visibleTargets.Add(target);
                     if (target.tag == "Player")
                     {
-
+                        enemyAiMovement.playerInSight = true;
                     }
 
                 }
 
 
 
+            }
+            else
+            {
+                enemyAiMovement.playerInSight = false;
             }
         }
     }

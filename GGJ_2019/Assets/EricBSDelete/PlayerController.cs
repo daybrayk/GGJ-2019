@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour {
         if(Input.GetAxis("Horizontal") <= 0.2f && Input.GetAxis("Horizontal") >= -0.2f && Input.GetAxis("Vertical") <= 0.2f && Input.GetAxis("Vertical") >= -0.2f)
         {
             rb.velocity = Vector3.zero;
-            Debug.Log("Test");
+            //Debug.Log("Test");
         }
 
 
