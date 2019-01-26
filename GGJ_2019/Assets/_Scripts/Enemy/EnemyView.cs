@@ -14,6 +14,7 @@ public class EnemyView : MonoBehaviour {
 
     [HideInInspector]
     public List<Transform> visibleTargets = new List<Transform>();
+
     private void Update()
     {
         visibleTargets.Clear();
@@ -31,14 +32,13 @@ public class EnemyView : MonoBehaviour {
                     visibleTargets.Add(target);
                     if (target.tag == "Player")
                     {
-                        //target.GetComponent<EnemyBehavior>().playerCanSee = true;
+
                     }
 
                 }
-            }
-            else
-            {
-                //target.GetComponent<EnemyBehavior>().playerCanSee = false;
+
+
+
             }
         }
     }

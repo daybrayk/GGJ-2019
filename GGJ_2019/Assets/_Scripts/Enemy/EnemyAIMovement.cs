@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyAIMovement : MonoBehaviour {
+public class EnemyAIMovement : AvatarFunctionality {
 
 
 

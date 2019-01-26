@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+[CustomEditor(typeof(EnemyView))]
 public class FieldOfViewEditor : Editor {
 
     private void OnSceneGUI()
