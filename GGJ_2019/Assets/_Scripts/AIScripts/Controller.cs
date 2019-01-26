@@ -5,7 +5,7 @@ using UnityEngine;
 public class Controller : MonoBehaviour {
     protected AvatarFunctionality m_avatar;
 	// Use this for initialization
-	void Start () {
+	protected void Start () {
         m_avatar = GetComponent<AvatarFunctionality>();
 	}
 }

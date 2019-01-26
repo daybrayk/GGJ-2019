@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IdleState : BaseState
-{
-
-    public IdleState(AIController aiController) : base(aiController)
+public class FollowState : BaseState {
+    public Transform destination;
+    public FollowState(AIController npcController) : base(npcController)
     {
-        Debug.Log("Creating IdleState");
-        stateID = StateIDs.States.Idle;
+
     }
+
     public override void Init()
     {
         
@@ -17,9 +16,7 @@ public class IdleState : BaseState
 
     public override void OnEnter()
     {
-        //play animation
-        //stop movement
-        aiController.gameObject.GetComponent<Renderer>().material.color = Color.green;
+        
     }
 
     public override void OnExit()

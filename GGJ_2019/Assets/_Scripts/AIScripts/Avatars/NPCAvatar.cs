@@ -15,4 +15,14 @@ public class NPCAvatar : AvatarFunctionality {
     {
         base.FixedUpdate();
     }
+
+    public virtual void DoMechanic()
+    {
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        
+    }
 }

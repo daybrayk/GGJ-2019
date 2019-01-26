@@ -39,6 +39,10 @@ public class StateManager {
         {
             case StateIDs.States.Idle:
                 break;
+            case StateIDs.States.Follow:
+                break;
+            case StateIDs.States.Mechanic:
+                break;
         }
     }
 
