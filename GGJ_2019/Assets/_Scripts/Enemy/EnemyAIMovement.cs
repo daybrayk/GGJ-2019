@@ -18,7 +18,7 @@ public class EnemyAIMovement : AvatarFunctionality {
     //public float speed;
 
     public List<Transform> patrolLocations = new List<Transform>();
-    private List<Transform> tempLocation = new List<Transform>();
+    //private List<Transform> tempLocation = new List<Transform>();
     [SerializeField]
     private int patrolNumber;
 
@@ -35,7 +35,9 @@ public class EnemyAIMovement : AvatarFunctionality {
         {
             Debug.Log("No Patrol Locations Entered For " + name);
         }
-	}
+
+        ShuffleList();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -86,7 +88,9 @@ public class EnemyAIMovement : AvatarFunctionality {
 
         if(patrolNumber >= patrolLocations.Count - 1)
         {
+            ShuffleList();
             patrolNumber = 0;
+
         }
         else
         {
@@ -110,17 +114,23 @@ public class EnemyAIMovement : AvatarFunctionality {
         }
     }
 
-    //public static void Shuffle<T>(this IList<T> ts)
-    //{
-    //    var count = ts.Count;
-    //    var last = count - 1;
-    //    for (var i = 0; i < last; ++i)
-    //    {
-    //        var r = UnityEngine.Random.Range(i, count);
-    //        var tmp = ts[i];
-    //        ts[i] = ts[r];
-    //        ts[r] = tmp;
-    //    }
-    //}
+    private void ShuffleList()
+    {
+
+        List<Transform> tempList = new List<Transform>();
+        int initialCount = patrolLocations.Count;
+        //int temp = inputList.Count;
+
+        for(int i = 0; i < initialCount; i++)
+        {
+            int r = Random.Range(0, patrolLocations.Count - 1);
+            Transform temp = patrolLocations[r];
+            tempList.Add(temp);
+            patrolLocations.RemoveAt(r);
+            
+        }
+        patrolLocations = tempList;
+
+    }
 
 }
