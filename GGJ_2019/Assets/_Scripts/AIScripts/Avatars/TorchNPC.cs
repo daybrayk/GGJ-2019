@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TorchNPC : NPCAvatar {
+
     public Light torch;
+
 	// Use this for initialization
 	new void Start () {
         base.Start();	
@@ -13,6 +15,8 @@ public class TorchNPC : NPCAvatar {
     new void FixedUpdate()
     {
         base.FixedUpdate();
+
+        
     }
 
     public override bool DoMechanic(Collider c)
