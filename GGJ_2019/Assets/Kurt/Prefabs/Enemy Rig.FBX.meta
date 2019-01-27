@@ -1,0 +1,238 @@
+fileFormatVersion: 2
+guid: bfafb34cb4e408a459f47adc670653a0
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Enemy:Enemy001
+    100004: group
+    100006: group1
+    100008: HEAD_A
+    100010: HEAD_B
+    100012: HEAD_C
+    100014: HEAD_TIP
+    100016: HIPS
+    100018: ikHandle1
+    100020: ikHandle10
+    100022: ikHandle2
+    100024: ikHandle3
+    100026: ikHandle4
+    100028: ikHandle5
+    100030: ikHandle6
+    100032: ikHandle9
+    100034: L_ELBOW
+    100036: L_INDEX_A
+    100038: L_INDEX_B
+    100040: L_INDEX_C
+    100042: L_INDEXTIP
+    100044: L_MIDDLE_A
+    100046: L_MIDDLE_B
+    100048: L_MIDDLE_C
+    100050: L_MIDDLETIP
+    100052: L_PINKY_A
+    100054: L_PINKY_B
+    100056: L_PINKY_C
+    100058: L_PINKYTIP
+    100060: L_RING_A
+    100062: L_RING_B
+    100064: L_RING_C
+    100066: L_RINGTIP
+    100068: L_SHOULDER
+    100070: L_SHOULDERBLADE
+    100072: L_THUMB_A
+    100074: L_THUMB_B
+    100076: L_THUMB_C
+    100078: L_THUMBTIP
+    100080: L_WRIST
+    100082: NECK_A
+    100084: NECK_B
+    100086: pasted__nurbsCircle1
+    100088: pasted__nurbsCircle1 1
+    100090: R_ELBOW
+    100092: R_INDEX_A
+    100094: R_INDEX_B
+    100096: R_INDEX_C
+    100098: R_INDEXTIP
+    100100: R_MIDDLE_A
+    100102: R_MIDDLE_B
+    100104: R_MIDDLE_C
+    100106: R_MIDDLETIP
+    100108: R_PINKY_A
+    100110: R_PINKY_B
+    100112: R_PINKY_C
+    100114: R_PINKYTIP
+    100116: R_RING_A
+    100118: R_RING_B
+    100120: R_RING_C
+    100122: R_RINGTIP
+    100124: R_SHOULDER
+    100126: R_SHOULDERBLADE
+    100128: R_THUMB_A
+    100130: R_THUMB_B
+    100132: R_THUMB_C
+    100134: R_THUMBTIP
+    100136: R_WRIST
+    100138: SPINE_A
+    100140: SPINE_B
+    100142: SPINE_C
+    100144: SPINE_D
+    400000: //RootNode
+    400002: Enemy:Enemy001
+    400004: group
+    400006: group1
+    400008: HEAD_A
+    400010: HEAD_B
+    400012: HEAD_C
+    400014: HEAD_TIP
+    400016: HIPS
+    400018: ikHandle1
+    400020: ikHandle10
+    400022: ikHandle2
+    400024: ikHandle3
+    400026: ikHandle4
+    400028: ikHandle5
+    400030: ikHandle6
+    400032: ikHandle9
+    400034: L_ELBOW
+    400036: L_INDEX_A
+    400038: L_INDEX_B
+    400040: L_INDEX_C
+    400042: L_INDEXTIP
+    400044: L_MIDDLE_A
+    400046: L_MIDDLE_B
+    400048: L_MIDDLE_C
+    400050: L_MIDDLETIP
+    400052: L_PINKY_A
+    400054: L_PINKY_B
+    400056: L_PINKY_C
+    400058: L_PINKYTIP
+    400060: L_RING_A
+    400062: L_RING_B
+    400064: L_RING_C
+    400066: L_RINGTIP
+    400068: L_SHOULDER
+    400070: L_SHOULDERBLADE
+    400072: L_THUMB_A
+    400074: L_THUMB_B
+    400076: L_THUMB_C
+    400078: L_THUMBTIP
+    400080: L_WRIST
+    400082: NECK_A
+    400084: NECK_B
+    400086: pasted__nurbsCircle1
+    400088: pasted__nurbsCircle1 1
+    400090: R_ELBOW
+    400092: R_INDEX_A
+    400094: R_INDEX_B
+    400096: R_INDEX_C
+    400098: R_INDEXTIP
+    400100: R_MIDDLE_A
+    400102: R_MIDDLE_B
+    400104: R_MIDDLE_C
+    400106: R_MIDDLETIP
+    400108: R_PINKY_A
+    400110: R_PINKY_B
+    400112: R_PINKY_C
+    400114: R_PINKYTIP
+    400116: R_RING_A
+    400118: R_RING_B
+    400120: R_RING_C
+    400122: R_RINGTIP
+    400124: R_SHOULDER
+    400126: R_SHOULDERBLADE
+    400128: R_THUMB_A
+    400130: R_THUMB_B
+    400132: R_THUMB_C
+    400134: R_THUMBTIP
+    400136: R_WRIST
+    400138: SPINE_A
+    400140: SPINE_B
+    400142: SPINE_C
+    400144: SPINE_D
+    2100000: Enemy_default2
+    4300000: Enemy:Enemy001
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Enemy:Enemy001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.0254
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

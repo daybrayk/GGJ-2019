@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerAvatar : AvatarFunctionality
-{
+public class PlayerAvatar : AvatarFunctionality { 
 
     PlayerController _pc;
 
@@ -13,9 +12,7 @@ public class PlayerAvatar : AvatarFunctionality
     {
         base.Start();
 
-         _pc = GetComponent<PlayerController>();        
-
-        
+         _pc = GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
@@ -24,8 +21,6 @@ public class PlayerAvatar : AvatarFunctionality
         base.FixedUpdate();
     }
 
-
-
     public void TalkToPerson()
     {
         // Talking to NPC - Dialog Box - Click to continue?
@@ -33,29 +28,16 @@ public class PlayerAvatar : AvatarFunctionality
         // pull up the dialog on screen (Have options based on NPC script)
 
         // Make canvas appear from a script
-
-
     }
 
-    // Turning on a light
-    // 
-
-    private void OnMouseOver()
+    public void OnMouseOver()
     {
         // Illuminate NPC to show that the player can interact
-        OnMouseDown();
+        
     }
 
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
-        // pop up dialog box that initializes the conversation with the player
-
+        //_dialog.AxePerson();
     }
-
-    public void Rotate(float val)
-    {
-        //m_rb.AddTorque(Vector3.up * m_angularSpeed * val);
-    }
-}
-// panel with text for conversation
-// 
+} 

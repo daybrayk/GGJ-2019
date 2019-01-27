@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Destructible
+  - AxePerson
+  - RopePerson
+  - TorchPerson
   layers:
   - Default
   - TransparentFX
@@ -16,9 +19,9 @@ TagManager:
   - 
   - PostProcessing
   - Player
-  - 
-  - 
-  - 
+  - AxeGuy
+  - RopeGuy
+  - TorchGuy
   - 
   - 
   - 

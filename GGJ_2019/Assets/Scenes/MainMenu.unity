@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028346, g: 0.22571373, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -237,7 +237,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Get ready to begin your adventure!!
+  m_Text: Get ready to begin your journey!
 --- !u!222 &89786403
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -255,12 +255,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 263}
   m_LocalScale: {x: 0.84, y: 0.84, z: 0.84}
   m_Children: []
-  m_Father: {fileID: 94628959}
-  m_RootOrder: 10
+  m_Father: {fileID: 1714806341}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1280, y: -15}
+  m_AnchoredPosition: {x: 4241, y: -668}
   m_SizeDelta: {x: 1129.15, y: 162.62}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &94628955
@@ -355,12 +355,7 @@ RectTransform:
   - {fileID: 978991951}
   - {fileID: 1870239361}
   - {fileID: 87778757}
-  - {fileID: 403204768}
-  - {fileID: 740792499}
-  - {fileID: 1859059571}
-  - {fileID: 241143587}
-  - {fileID: 1589462214}
-  - {fileID: 89786404}
+  - {fileID: 1714806341}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -395,15 +390,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40a33c75785fc074f91f4fbc523e0c53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _titleText1: {fileID: 403204769}
-  _titleText2: {fileID: 740792500}
-  _titleText3: {fileID: 1859059572}
-  _titleText4: {fileID: 241143588}
-  _titleText5: {fileID: 89786402}
-  _titleText6: {fileID: 1589462215}
-  scrollTimer: 0
-  waitTimer: 0
-  displayTimer: 0
 --- !u!1 &241143586
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,12 +417,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 263}
   m_LocalScale: {x: 0.84, y: 0.84, z: 0.84}
   m_Children: []
-  m_Father: {fileID: 94628959}
-  m_RootOrder: 8
+  m_Father: {fileID: 1714806341}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1186, y: -15}
+  m_AnchoredPosition: {x: 3068, y: -648}
   m_SizeDelta: {x: 1110, y: 87.988}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &241143588
@@ -471,7 +457,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: If there are any humans left alive...
+  m_Text: If there is anyone left alive...
 --- !u!222 &241143589
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -506,12 +492,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 263}
   m_LocalScale: {x: 0.84, y: 0.84, z: 0.84}
   m_Children: []
-  m_Father: {fileID: 94628959}
-  m_RootOrder: 5
+  m_Father: {fileID: 1714806341}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1067, y: -15}
+  m_AnchoredPosition: {x: 21, y: -658}
   m_SizeDelta: {x: 964.6, y: 80.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &403204769
@@ -581,12 +567,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 263}
   m_LocalScale: {x: 0.84, y: 0.84, z: 0.84}
   m_Children: []
-  m_Father: {fileID: 94628959}
-  m_RootOrder: 6
+  m_Father: {fileID: 1714806341}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1123, y: -15}
+  m_AnchoredPosition: {x: 1065, y: -665}
   m_SizeDelta: {x: 836.2, y: 605.02}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &740792500
@@ -662,8 +648,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -1, y: 0}
+  m_AnchoredPosition: {x: -1.5, y: -0.8999939}
+  m_SizeDelta: {x: 18.8, y: 19.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &849322040
 MonoBehaviour:
@@ -1148,12 +1134,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 263}
   m_LocalScale: {x: 0.84, y: 0.84, z: 0.84}
   m_Children: []
-  m_Father: {fileID: 94628959}
-  m_RootOrder: 9
+  m_Father: {fileID: 1714806341}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1182, y: -15}
+  m_AnchoredPosition: {x: 5419, y: -643}
   m_SizeDelta: {x: 1129.15, y: 162.62}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1589462215
@@ -1188,7 +1174,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'TFS X presents: Above The Clouds
+  m_Text: 'TFS X presents: A Place to Call Home
 
     Global Game Jam 2019 @GBC Toronto'
 --- !u!222 &1589462216
@@ -1198,6 +1184,146 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1589462213}
   m_CullTransparentMesh: 0
+--- !u!1 &1609732942
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1609732943}
+  - component: {fileID: 1609732945}
+  - component: {fileID: 1609732944}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1609732943
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1609732942}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1714806341}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -1302, y: -664.6}
+  m_SizeDelta: {x: 1009.4, y: 758.3}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1609732944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1609732942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1609732945
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1609732942}
+  m_CullTransparentMesh: 0
+--- !u!1 &1714806340
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1714806341}
+  - component: {fileID: 1714806342}
+  - component: {fileID: 1714806343}
+  m_Layer: 5
+  m_Name: TitlePageIntro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1714806341
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1714806340}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 403204768}
+  - {fileID: 740792499}
+  - {fileID: 1859059571}
+  - {fileID: 241143587}
+  - {fileID: 89786404}
+  - {fileID: 1589462214}
+  - {fileID: 1609732943}
+  m_Father: {fileID: 94628959}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1294, y: 667}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1714806342
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1714806340}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ea74f2c716ab9844086cb432656afbb1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1714806343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1714806340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40a33c75785fc074f91f4fbc523e0c53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1769609385
 GameObject:
   m_ObjectHideFlags: 0
@@ -1300,12 +1426,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 263}
   m_LocalScale: {x: 0.84, y: 0.84, z: 0.84}
   m_Children: []
-  m_Father: {fileID: 94628959}
-  m_RootOrder: 7
+  m_Father: {fileID: 1714806341}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1167, y: -15}
+  m_AnchoredPosition: {x: 2042, y: -656}
   m_SizeDelta: {x: 836, y: 538.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1859059572
@@ -1340,8 +1466,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: " You have now awaken in a mysterious place\nand must survive the harsh
-    conditions and save\n others whomight be out there.."
+  m_Text: " You will awaken in a mysterious place\nand must survive the harsh conditions
+    and save\n others who might be out there.."
 --- !u!222 &1859059573
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1465,7 +1591,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
