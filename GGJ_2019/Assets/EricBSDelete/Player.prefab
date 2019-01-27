@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4258318437880280}
   - component: {fileID: 33868009095454402}
   - component: {fileID: 23373083204820758}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MouthPiece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4139739374951434}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ProjectileSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51,7 +51,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4084569176762102}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Mouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,7 +68,7 @@ GameObject:
   - component: {fileID: 4752118652723648}
   - component: {fileID: 33578080666908496}
   - component: {fileID: 23711244030723028}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MouthPiece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,7 +85,7 @@ GameObject:
   - component: {fileID: 4742825928581544}
   - component: {fileID: 33756460503395886}
   - component: {fileID: 23365607011959084}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MouthPiece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 4074610504104514}
   - component: {fileID: 33459010663385730}
   - component: {fileID: 23815257695796086}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftEye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4180858187373906}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CameraPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 4182620358124658}
   - component: {fileID: 33850260844341232}
   - component: {fileID: 23501680062410592}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightEye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 33777875206519350}
   - component: {fileID: 23513706762806326}
   - component: {fileID: 136613477562062434}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 33178557991187212}
   - component: {fileID: 23434651803740168}
   - component: {fileID: 136627772223828712}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rocket (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -187,11 +187,12 @@ GameObject:
   - component: {fileID: 4928271728183154}
   - component: {fileID: 136024347317998010}
   - component: {fileID: 54677501759704620}
-  - component: {fileID: 114184805415857038}
   - component: {fileID: 114319301808273308}
-  m_Layer: 0
+  - component: {fileID: 114911875089460304}
+  - component: {fileID: 114214707717727036}
+  m_Layer: 9
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -206,7 +207,7 @@ GameObject:
   - component: {fileID: 4788930384308092}
   - component: {fileID: 33452624045973972}
   - component: {fileID: 23835616022578966}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MouthPiece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -223,7 +224,7 @@ GameObject:
   - component: {fileID: 4147158865249454}
   - component: {fileID: 33344842346135498}
   - component: {fileID: 23499124529984194}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -399,7 +400,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1821115395114138}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1, y: 0, z: -4.19}
+  m_LocalPosition: {x: 17.23, y: -6.975904e-18, z: -12.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4147158865249454}
@@ -804,7 +805,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &114184805415857038
+--- !u!114 &114214707717727036
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -812,7 +813,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1821115395114138}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e37aca9686c7077418cd2c61ec4c351c, type: 3}
+  m_Script: {fileID: 11500000, guid: 60e61d8d9589e9147ac4a80221fe667c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   forwardSpeed: 10
@@ -834,6 +835,19 @@ MonoBehaviour:
   projectile: {fileID: 1426586206078274, guid: 2aef6994674ac04409f0b009699ac784, type: 2}
   launchSpeed: 30
   spawnPoint: {fileID: 4139739374951434}
+--- !u!114 &114911875089460304
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1821115395114138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ccf53d565029c4a82d474996aedd79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canInteract: 0
+  npcNumber: 0
 --- !u!136 &136024347317998010
 CapsuleCollider:
   m_ObjectHideFlags: 1

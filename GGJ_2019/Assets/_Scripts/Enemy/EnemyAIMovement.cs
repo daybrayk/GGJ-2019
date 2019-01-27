@@ -22,6 +22,8 @@ public class EnemyAIMovement : AvatarFunctionality {
     [SerializeField]
     private int patrolNumber;
 
+    Animator anim;
+
     // Use this for initialization
     new protected void Start () {
         base.Start();
@@ -37,6 +39,8 @@ public class EnemyAIMovement : AvatarFunctionality {
         }
 
         ShuffleList();
+
+        anim = GetComponentInChildren<Animator>();
     }
 	
 	// Update is called once per frame
@@ -49,6 +53,8 @@ public class EnemyAIMovement : AvatarFunctionality {
         {
             Patrol();
         }
+
+        anim.SetFloat("Speed", nma.acceleration);
 	}
 
     public void ChasePlayer()
@@ -63,6 +69,10 @@ public class EnemyAIMovement : AvatarFunctionality {
             playerInSight = false;
             nma.SetDestination(target.position);
         }
+        //else if(distanceBetweenTarget <=2){
+        //    anim.SetTrigger("Attack");
+
+        //}
     }
 
     private void Patrol()
@@ -109,8 +119,8 @@ public class EnemyAIMovement : AvatarFunctionality {
         if(c.transform.tag == "Player")
         {
             //c.transform.GetComponent<PlayerController>().DoSomething();
-            Debug.Log("RAPE");
-
+            //Debug.Log("RAPE");
+            anim.SetTrigger("Attack");
         }
     }
 
